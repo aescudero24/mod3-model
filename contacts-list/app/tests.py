@@ -89,7 +89,7 @@ class TestContact(TestCase):
                 contact_data["is_favorite"],
             )
 
-        self.assertIsNone(len(models.find_contact_by_name("aousnth")))
+        self.assertIsNone(models.find_contact_by_name("aousnth"))
 
         contact = models.find_contact_by_name("Alma")
 
